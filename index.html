@@ -71,7 +71,6 @@
 
         .selection-group {
             border-bottom: 1px solid grey;
-            display: flex;
         }
     </style>
 
@@ -79,18 +78,10 @@
 
         <div class='flex'>
             <div id="image-container" style='height: 500px; width: 500px; background-color: lightgrey; border-radius: 10px; border: 3px solid black;'></div>
-            <div id='selection-container' style='  margin-left: 20px; padding: 5px; border: 3px solid black; border-radius: 10px;'>
-                <div class='selection-group'>
-                    <div class="example square">
-                        <p>Shirt Color</p>
-                        <input type="text" class="coloris" id='shirt-color-picker' value='#e76f51'>
-                    </div>
-                    <div class="example square">
-                        <p>Skin Color</p>
-                        <input type="text" class="coloris" id='skin-color-picker' value='rgb(120,44,21)'>
-                    </div>
-                </div>
-                
+            <div  style='  margin-left: 20px; padding: 5px; border: 3px solid black; border-radius: 10px;'>
+                <table id='selection-container'>
+
+                </table>
             </div>
 
         </div>

@@ -23,6 +23,9 @@ const svgs = {
       frequency: 1,
       svg: `<path d="M588.585,341.542C593.233,337.498 599.257,333.729 608.539,330.609C616.121,329.517 617.573,344.324 615.997,363.551C615.603,368.359 615.458,374.987 614.66,379.91C614.747,386.852 604.829,394.314 595.859,396.946C589.414,398.836 583.448,398.145 582.085,393.384C579.128,383.054 588.585,341.542 588.585,341.542Z" style="fill:{{skin_color}};stroke:black;stroke-width:5px;"/>`,
     },
+    "ears-2": {
+      svg:  `<path d="M583.147,337.92L610.98,338.56C617.659,347.935 615.742,361.986 607.735,379.35C606.938,381.062 601.873,388.353 593.86,392.132C588.063,394.865 579.22,395.978 576.528,390.774C571.591,381.23 583.147,337.92 583.147,337.92Z" style="fill:{{skin_color}};stroke:black;stroke-width:5px;"/>`
+    }
   },
   eyebrow: {
     "eyebrows-1": {
@@ -31,9 +34,9 @@ const svgs = {
       svg: `
             <g id="Eyebrows-2" >
                 <g id="Left-Eyebrow" transform="matrix(-1,0,0,1,1013.11,0)">
-                    <path d="M523.738,305.02C533.861,301.601 544.426,301.918 554.496,303.211C565.508,305.741 572.515,309.307 579.377,314.105C572.568,305.377 565.721,296.095 557.067,294.731C550.409,293.86 543.185,293.202 536.085,294.13C530.075,295.681 526.025,301.796 523.738,305.02Z" style="stroke:black;stroke-width:0.42px;"/>
+                    <path d="M523.738,305.02C533.861,301.601 544.426,301.918 554.496,303.211C565.508,305.741 572.515,309.307 579.377,314.105C572.568,305.377 565.721,296.095 557.067,294.731C550.409,293.86 543.185,293.202 536.085,294.13C530.075,295.681 526.025,301.796 523.738,305.02Z" style="fill:{{hair_color}};stroke:{{hair_color}};stroke-width:0.42px;"/>
                 </g>
-                <path id="Left-Eyebrow1" d="M523.738,305.02C533.861,301.601 544.426,301.918 554.496,303.211C565.508,305.741 572.515,309.307 579.377,314.105C572.568,305.377 565.721,296.095 557.067,294.731C550.409,293.86 543.185,293.202 536.085,294.13C530.075,295.681 526.025,301.796 523.738,305.02Z" style="stroke:black;stroke-width:0.42px;"/>
+                <path id="Left-Eyebrow1" d="M523.738,305.02C533.861,301.601 544.426,301.918 554.496,303.211C565.508,305.741 572.515,309.307 579.377,314.105C572.568,305.377 565.721,296.095 557.067,294.731C550.409,293.86 543.185,293.202 536.085,294.13C530.075,295.681 526.025,301.796 523.738,305.02Z" style="fill:{{hair_color}};stroke:{{hair_color}};stroke-width:0.42px;"/>
             </g>`,
     },
   },
@@ -57,6 +60,36 @@ const svgs = {
             <path d="M445.802,321.466C460.276,308.993 476.226,308.662 486.956,321.602" style="fill:none;stroke:black;stroke-width:6.25px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.5;"/>
         </g>`,
     },
+  },
+  hair_base: {
+    "hair-base-1": {
+      svg: `
+        <defs>
+          <linearGradient id="_hairBase" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.5025,151.059,-151.059,1.5025,501.658,150.065)"><stop offset="0" style="stop-color:{{hair_color}};stop-opacity:1"/><stop offset="0.65" style="stop-color:{{hair_color}};stop-opacity:0.86"/><stop offset="0.84" style="stop-color:{{hair_color}};stop-opacity:0.49"/><stop offset="1" style="stop-color:{{hair_color}};stop-opacity:0.06"/></linearGradient>
+        </defs>
+        <path d="M501.103,190.003C470.308,191.558 448.991,197.806 437.058,207.547C429.345,225.115 426.042,243.111 425.268,261.353C423.356,273.82 418.54,287.617 410.424,295.103C404.684,262.721 408.999,226.104 428.021,192.638C447.633,172.496 467.182,160.06 495.27,156.67C498.216,153.723 557.272,167.169 572.864,191.023C591.885,224.49 593.906,262.721 588.167,295.103C580.051,287.617 575.793,273.82 573.88,261.353C573.106,243.111 573.803,225.115 566.091,207.547C558.275,193.706 503.567,187.648 501.103,190.003Z" style="fill:url(#_hairBase);"/>
+        
+        `
+    },
+    "hair-base-2": {
+      svg: `
+      <g id="Side-Hair" serif:id="Side Hair">
+          <g>
+              <path id="Right-Hair-Side" serif:id="Right Hair Side" d="M581.354,252.132C590.912,262.007 586.458,283.301 585.576,284.893C584.208,287.363 583.147,290.396 584.809,292.678C591.569,301.966 599.395,319.464 595.369,335.28L600.885,335.257C606.354,313.377 607.942,290.111 607.096,265.975L581.354,252.132Z" style="fill:url(#_Linear5);"/>
+              <g id="Left-Hair-Side" serif:id="Left Hair Side" transform="matrix(-1,0,0,1,1013.66,0)">
+                  <path d="M581.354,252.132C590.912,262.007 585.458,283.301 584.576,284.893C583.208,287.363 582.147,290.396 583.809,292.678C590.569,301.966 599.395,319.464 595.369,335.28L600.885,335.257C606.354,313.377 607.942,290.111 607.096,265.975L581.354,252.132Z" style="fill:url(#_Linear5);"/>
+              </g>
+          </g>
+      </g>
+      `
+    }
+  },
+  hair_top:{
+    "hair-top-1": {
+      svg: `
+        <path id="Hair-Top" serif:id="Hair Top" d="M401.594,238.226C402.631,244.167 405.393,266.596 405.693,267.03C405.853,267.261 428.765,257.682 432.755,252.111C484.523,238.527 533.607,238.978 580.157,251.523C585.58,252.742 596.374,264.733 603.666,266.104C604.936,266.343 606.222,266.473 607.221,265.913C608.19,265.368 608.202,262.782 608.753,260.937C610.989,253.454 610.962,239.344 610.962,239.344L613.172,222.587C611.631,220.651 611.629,217.356 610.211,215.246C608.66,212.94 606.375,212.026 604.77,209.578C603.387,207.469 603.336,204.255 602.71,201.263C601.069,200.949 599.897,198.986 598.418,198.386C597.045,197.829 595.315,198.342 593.878,197.732C591.992,196.931 590.448,194.909 589.235,193.143C587.38,192.946 586.189,191.456 584.481,190.759C582.965,190.14 581.359,190.753 579.9,189.72C578.207,188.522 576.698,185.545 575.552,182.747L562.863,178.748C563.077,175.582 562.406,173.631 561.1,172.553C559.647,170.837 557.675,170.326 556.104,169.144C553.374,167.091 550.872,165.141 547.357,166.628C545.566,170.2 543.396,172.332 540.261,170.797L527.735,165.911C524.992,166.048 523.477,167.43 522.91,169.773L519.331,169.853C515.398,168.185 511.255,167.569 507.132,166.849C504.901,162.513 502.67,160.564 500.438,160.361C494.616,160.616 490.722,162.636 488.303,165.144C486.064,167.465 482.56,168.072 479.713,170.694C477.48,168.481 474.758,166.927 470.537,167.389C467.964,169.154 466.219,171.208 461.752,174.038C457.682,176.617 450.858,171.421 448.684,173.547C445.011,177.14 444.673,186.827 443.007,187.445L434.366,190.038C431.36,194.791 424.064,196.496 416.105,197.73L411.871,201.041C410.069,204.288 410.793,207.047 409.056,210.325C406.296,215.535 402.123,219.457 401.305,225.603L405.782,233.65L401.594,238.226Z" style="fill:url(#_Linear7);stroke:black;stroke-width:0.42px;"/>
+      `
+    }
   },
   face_base: {
     "face-base-1": {
@@ -108,7 +141,7 @@ const svgs = {
       gender_specific: false,
       frequency: 1,
       svg: `
-            <path id="Moustache-2" d="M467.627,371.815C476.423,365.158 485.133,357.968 494.248,357.482C499.906,357.181 507.89,356.234 513.531,357.299C521.066,358.722 528.939,365.439 537.871,372.598" style="fill:none;stroke:black;stroke-opacity:0.75;stroke-width:8.33px;stroke-miterlimit:1.5;"/>
+            <path id="Moustache-2" d="M467.627,371.815C476.423,365.158 485.133,357.968 494.248,357.482C499.906,357.181 507.89,356.234 513.531,357.299C521.066,358.722 528.939,365.439 537.871,372.598" style="fill:none;stroke:{{hair_color}};stroke-opacity:0.75;stroke-width:8.33px;stroke-miterlimit:1.5;"/>
         `,
     },
   },
@@ -241,23 +274,21 @@ const svgs = {
                                         {{ face_base|safe }}
                                     </clipPath>
 
-                                    <g clip-path="url(#_clip4)" style="mix-blend-mode: overlay;">
+                                    <g id='face_light' clip-path="url(#_clip4)" style="mix-blend-mode: overlay;">
                                         {{ face_light|safe }}
                                     </g>
-                                    <g clip-path="url(#_clip4)">
+                                    <g id='face_shadow' clip-path="url(#_clip4)">
                                         {{ face_shadow|safe }}
                                         
-                                        <g transform="matrix(1,0,0,1,-0.803312,16.0911)">
-                                            <g id="Hair-2">
-                                                <path d="M501.103,190.003C470.308,191.558 448.991,197.806 437.058,207.547C429.345,225.115 426.042,243.111 425.268,261.353C423.356,273.82 418.54,287.617 410.424,295.103C404.684,262.721 408.999,226.104 428.021,192.638C447.633,172.496 467.182,160.06 495.27,156.67C498.216,153.723 557.272,167.169 572.864,191.023C591.885,224.49 593.906,262.721 588.167,295.103C580.051,287.617 575.793,273.82 573.88,261.353C573.106,243.111 573.803,225.115 566.091,207.547C558.275,193.706 503.567,187.648 501.103,190.003Z" style="fill:url(#_Linear5);"/>
-                                            </g>
+                                        <g id='hair_base' transform="matrix(1,0,0,1,-0.803312,16.0911)">
+                                          {{hair_base|safe}}
                                         </g>
                                     </g>
                                     {{ face_base|style( "fill:none;stroke:black;stroke-width:5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.5;")|safe }}
                                 </g>
                             </g>
-                            <g id="Hair">
-                                {{hair|safe}}
+                            <g id="hair_top">
+                                {{hair_top|safe}}
                             </g>
                             <g id="Soul-Patch" transform="matrix(1,0,0,1,3.92409,-30.3131)">
                                 {{soul_patch|safe}}
@@ -308,7 +339,6 @@ const svgs = {
                         </g>
                     </g>
                     <defs>
-                        <linearGradient id="_Linear5" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.5025,151.059,-151.059,1.5025,501.658,150.065)"><stop offset="0" style="stop-color:black;stop-opacity:1"/><stop offset="0.65" style="stop-color:black;stop-opacity:0.86"/><stop offset="0.84" style="stop-color:black;stop-opacity:0.49"/><stop offset="1" style="stop-color:black;stop-opacity:0.06"/></linearGradient>
                         <linearGradient id="_Linear6" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.468924,117.149,-117.149,-0.468924,511.82,216.745)"><stop offset="0" style="stop-color:white;stop-opacity:0"/><stop offset="0.65" style="stop-color:white;stop-opacity:0.05"/><stop offset="0.84" style="stop-color:white;stop-opacity:0.18"/><stop offset="1" style="stop-color:white;stop-opacity:0.33"/></linearGradient>
                     </defs>
                 </svg>
@@ -344,145 +374,147 @@ const svgs = {
   },
 };
 
-const draw_template = async () => {
-  console.log(svgs);
+const option_html_template = `
+<tr class='selection-group'>
+    <td class="example square">
+        <p>Shirt Color</p>
+        <input type="text" class="coloris" id='shirt-color-picker' value='#e76f51'>
+    </td>
+    <td class="example square">
+        <p>Skin Color</p>
+        <input type="text" class="coloris" id='skin-color-picker' value='rgb(120,44,21)'>
+    </td>
+    <td class="example square">
+        <p>Hair Color</p>
+        <input type="text" class="coloris" id='hair-color-picker' value='#000'>
+    </td>
+</tr>
+<tr class='selection-group dropdown-group'>
+{% for svg_group_name, svg_options in svgs %}
+<td>
+<div class="dropdown" style='padding: 4px;'>
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Choose {{svg_group_name}}
+    </a>
+    <ul class="dropdown-menu">
+        {% for svg_item_name, svg_item_obj in svg_options%}
+        <li class='dropdown-li' svg-id='{{svg_item_name}}' svg-group='{{svg_group_name}}'>
+            <a>
+            {{svg_item_name}} 
+            </a>
+            <!--<svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width: 100%; height: 100%;" xmlns="http://www.w3.org/2000/svg">
+                {{svg_item_obj.svg|safe}}
+            </svg>-->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+</td>
+
+
+    {% if loop.index0 % 3 == 1 or loop.last%}
+      </tr>
+      {% if not loop.last%}
+        <tr class='selection-group dropdown-group'>
+      {% endif %}
+    {%endif %}
+
+{% endfor %}
+`;
+
+let nunjucks_env = new nunjucks.Environment();
+
+nunjucks_env.addFilter("style", function (element, added_style) {
+  if (!element) {
+    return "";
+  }
+
+  const parser = new DOMParser();
+  const fragment = parser.parseFromString(element, "text/html");
+  const pathElement = fragment.querySelector("path");
+
+  pathElement.setAttribute("style", added_style);
+
+  return pathElement.outerHTML;
+});
+
+const draw_template = async (body_chosen, colors_chosen) => {
   let template = svgs.templates["template-1"].svg;
-  console.log(template);
-
   let container = document.getElementById("image-container");
-  let nunjucks_env = new nunjucks.Environment();
 
-  nunjucks_env.addFilter("style", function (element, added_style) {
-    if (!element) {
-      return "";
-    }
+  console.log({
+    body_chosen:body_chosen,
+    colors_chosen:colors_chosen
+  })
 
-    console.log({
-      element: element,
-      added_style: added_style,
-    });
+  let body_svgs = {}
 
-    const parser = new DOMParser();
-    const fragment = parser.parseFromString(element, "text/html");
-    const pathElement = fragment.querySelector("path");
+  Object.entries(body_chosen).forEach(async function (body_part_obj) {
+    let part_name = body_part_obj[0];
+    let chosen_part = body_part_obj[1];
 
-    pathElement.setAttribute("style", added_style);
-
-    console.log({
-      pathElement: pathElement,
-      fragment: fragment,
-    });
-
-    return pathElement.outerHTML;
-  });
-
-  let shirt_color_picker = document.getElementById("shirt-color-picker");
-  let skin_color_picker = document.getElementById("skin-color-picker");
-
-  let colors_chosen = {
-    skin_color:
-      skin_color_picker.parentElement.style.color || skin_color_picker.getAttribute("value"),
-    shirt_color:
-      shirt_color_picker.parentElement.style.color || shirt_color_picker.getAttribute("value"),
-  };
-
-  let body_chosen = {};
-
-  Object.entries(svgs).forEach(async function (obj_list) {
-    let key = obj_list[0];
-    let options = obj_list[1];
-    let first_option = options[Object.keys(options)[0]].svg;
-
-    // body_chosen[key] = nunjucks_env.renderString(first_option, colors_chosen);
-    body_chosen[key] = first_option;
+    body_svgs[part_name] = svgs[part_name][chosen_part].svg;
   });
 
   console.log({
-    body_chosen: body_chosen,
+    body_svgs: body_svgs,
     colors_chosen: colors_chosen,
   });
 
-  let template_filled = await nunjucks_env.renderString(template, body_chosen);
+  let template_filled = await nunjucks_env.renderString(template, body_svgs);
   template_filled = await nunjucks_env.renderString(template_filled, colors_chosen);
 
-  console.log({
-    template_filled: template_filled,
-    container: container,
-  });
-
   container.innerHTML = template_filled;
-  await draw_options()
 };
 
-const draw_options = async () => {
-  let html_template = `
-        <div class='selection-group dropdown-group' style=' display: flex; justify-content: space-evenly;'>
-        {% for svg_group_name, svg_options in svgs %}
-        
-        <div class="dropdown" style='padding: 4px;'>
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Choose {{svg_group_name}}
-            </a>
-            <ul class="dropdown-menu">
-                {% for svg_item_name, svg_item_obj in svg_options%}
-                <li>
-                    <a>
-                    {{svg_item_name}} 
-                    </a>
-                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="width: 100%; height: 100%;" xmlns="http://www.w3.org/2000/svg">
-                        {{svg_item_obj.svg|safe}}
-                    </svg>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
-
-            {% if loop.index0 % 2 == 1 or loop.last%}
-            </div>
-            <div class='selection-group dropdown-group' style=' display: flex; justify-content: space-evenly;'>
-            {%endif %}
-        
-        {% endfor %}
-    `;
-
+const get_colors = () => {
   let shirt_color_picker = document.getElementById("shirt-color-picker");
   let skin_color_picker = document.getElementById("skin-color-picker");
+  let hair_color_picker = document.getElementById("hair-color-picker");
 
-  let colors_chosen = {
-    skin_color:
-      skin_color_picker.parentElement.style.color || skin_color_picker.getAttribute("value"),
-    shirt_color:
-      shirt_color_picker.parentElement.style.color || shirt_color_picker.getAttribute("value"),
-  };
+  let colors_chosen = {};
 
-  let nunjucks_env = new nunjucks.Environment();
+  if (skin_color_picker && skin_color_picker.parentElement){
+    colors_chosen.skin_color = skin_color_picker.parentElement.style.color || skin_color_picker.getAttribute("value")
+  }
+  else {
+    colors_chosen.skin_color = "rgb(120,44,21)";
+  }
 
-  nunjucks_env.addFilter("style", function (element, added_style) {
-    if (!element) {
-      return "";
-    }
+  if (shirt_color_picker && shirt_color_picker.parentElement){
+    colors_chosen.shirt_color = shirt_color_picker.parentElement.style.color || shirt_color_picker.getAttribute("value");
+  }
+  else {
+    colors_chosen.shirt_color = "#e76f51";
+  }
 
-    console.log({
-      element: element,
-      added_style: added_style,
-    });
+  if (hair_color_picker && hair_color_picker.parentElement){
+    colors_chosen.hair_color = hair_color_picker.parentElement.style.color || hair_color_picker.getAttribute("value");
+  }
+  else {
+    colors_chosen.hair_color = "#000";
+  }
 
-    const parser = new DOMParser();
-    const fragment = parser.parseFromString(element, "text/html");
-    const pathElement = fragment.querySelector("path");
+  return colors_chosen;
+}
 
-    pathElement.setAttribute("style", added_style);
+const draw_options = async () => {
 
-    console.log({
-      pathElement: pathElement,
-      fragment: fragment,
-    });
+  let menus = document.getElementsByClassName('dropdown-menu');
+  console.log({
+    menus:menus
+  })
 
-    return pathElement.outerHTML;
-  });
+  let body_chosen = {}
+  Object.keys(svgs).forEach(k => body_chosen[k] = (body_chosen[k] ||  Object.keys(svgs[k])[0]));
 
-  let template_filled = await nunjucks_env.renderString(html_template, { svgs: svgs });
+  console.log({
+    body_chosen:body_chosen
+  })
+
+  let colors_chosen = get_colors();
+
+  let template_filled = await nunjucks_env.renderString(option_html_template, { svgs: svgs });
   template_filled = await nunjucks_env.renderString(template_filled, colors_chosen);
 
   const elements = document.querySelectorAll('.dropdown-group');
@@ -490,45 +522,77 @@ const draw_options = async () => {
 
   let container = document.getElementById("selection-container");
   container.innerHTML += template_filled;
+
+  Coloris({
+    el: ".coloris",
+    swatches: [
+      "#264653",
+      "#2a9d8f",
+      "#e9c46a",
+      "#f4a261",
+      "#e76f51",
+      "#d62828",
+      "#023e8a",
+      "#0077b6",
+      "#0096c7",
+      "#00b4d8",
+      "#48cae4",
+    ],
+  });
+  
+  Coloris.setInstance("#shirt-color-picker", {
+    theme: "pill",
+    themeMode: "dark",
+    formatToggle: true,
+    alpha: false,
+    swatches: ["#067bc2", "#84bcda", "#80e377", "#ecc30b", "#f37748", "#d56062"],
+    // onChange: draw_template,
+    defaultColor: colors_chosen.shirt_color,
+  });
+  
+  Coloris.setInstance("#skin-color-picker", {
+    theme: "pill",
+    themeMode: "dark",
+    formatToggle: true,
+    alpha: false,
+    swatches: ["#F08D4B", "#EA8E46", "#782514", "#A2412A", "#F6954E", "#FDA26B", "rgb(120,44,21)"],
+    // onChange: draw_template,
+    defaultColor: colors_chosen.skin_color,
+  });
+  
+  Coloris.setInstance("#hair-color-picker", {
+    theme: "pill",
+    themeMode: "dark",
+    formatToggle: true,
+    alpha: true,
+    swatches: ["#000", "rgb(120,44,21)"],
+    // onChange: draw_template,
+    defaultColor: colors_chosen.hair_color,
+  });
+
+  document.addEventListener('coloris:pick', event => {
+    console.log({event:event, this:this});
+    colors_chosen = get_colors();
+    draw_template(body_chosen, colors_chosen);
+  });
+
+
+  draw_template(body_chosen, colors_chosen);
+
+  const dropdown_lis = document.querySelectorAll(".dropdown-li");
+
+  dropdown_lis.forEach(li => {
+    li.onclick = function() {
+      console.log({li:li})
+      let svg_id = li.getAttribute('svg-id');
+      let svg_group = li.getAttribute('svg-group');
+      body_chosen[svg_group] = svg_id;
+      draw_template(body_chosen, colors_chosen)
+    };
+  });
 };
 
-Coloris({
-  el: ".coloris",
-  swatches: [
-    "#264653",
-    "#2a9d8f",
-    "#e9c46a",
-    "#f4a261",
-    "#e76f51",
-    "#d62828",
-    "#023e8a",
-    "#0077b6",
-    "#0096c7",
-    "#00b4d8",
-    "#48cae4",
-  ],
-});
+draw_options()
 
-Coloris.setInstance("#shirt-color-picker", {
-  theme: "pill",
-  themeMode: "dark",
-  formatToggle: true,
-  alpha: false,
-  swatches: ["#067bc2", "#84bcda", "#80e377", "#ecc30b", "#f37748", "#d56062"],
-  onChange: draw_template,
-  defaultColor: "#e76f51",
-});
-
-Coloris.setInstance("#skin-color-picker", {
-  theme: "pill",
-  themeMode: "dark",
-  formatToggle: true,
-  alpha: false,
-  swatches: ["#F08D4B", "#EA8E46", "#782514", "#A2412A", "#F6954E", "#FDA26B", "rgb(120,44,21)"],
-  onChange: draw_template,
-  defaultColor: "rgb(120,44,21)",
-});
-
-draw_template();
 
 // draw_options();
